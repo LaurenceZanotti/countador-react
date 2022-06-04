@@ -1,5 +1,5 @@
-div#App {
-    height: 100vh;
+div#main_content {
+    padding-top: 22em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ button#decrementar {
 }
 
 @media (max-width: 480px) {
-    div#App {
-        height: 80vh;
+    div#main_content {
+        padding-top: 11em;
     }
 }
