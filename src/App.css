@@ -1,5 +1,5 @@
 div#main_content {
-    padding-top: 22em;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,8 +8,16 @@ div#main_content {
 }
 
 h1 {
-    color: #7302ff;
+    background: -webkit-linear-gradient(90deg, #7302ff, #b578ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0;
+}
+
+.title {
+    -webkit-text-fill-color: #7302ff;
+    color: #7302ff;
 }
 
 span#placeholder {
@@ -61,6 +69,12 @@ button#decrementar {
 
 @media (max-width: 480px) {
     div#main_content {
-        padding-top: 11em;
+        height: 80vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+    div#main_content {
+        height: 80vh;
     }
 }

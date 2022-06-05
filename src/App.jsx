@@ -22,13 +22,12 @@ function App() {
     return (
         <>
             <div id="main_content">
-                <h1 className="font-xxx-large">Countador</h1>
+                <h1 className="font-xxx-large"><span className="title">Count</span>ador</h1>
                 <span className="font-xxx-large" id="placeholder">{contador}</span>
                 <div>
                     <button  className="font-large" id="incrementar" onClick={() => handleClick('incrementar')}>Incrementar</button>
                     <button  className="font-large" id="decrementar" onClick={() => handleClick('decrementar')}>Decrementar</button>
                 </div>
-                
             </div>
             <Footer />
         </>
